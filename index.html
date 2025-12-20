@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>N4vigat0r</title>
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e" />
+  <meta name="googlebot" content="index, follow, snippet" />
+  <link rel="shortcut icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="title">Welcom to the N4vigat0r</h1>
+  
+  <div class="form-control">
+    <input class="input input-alt" id="searchInput" placeholder="Type something intelligent" type="text">
+    <span class="input-border input-border-alt"></span>
+  </div>
+
+  <!-- SHORTCUTS -->
+  <div class="shortcuts">
+    <a href="https://google.com" class="shortcut">Google</a>
+    <a href="https://youtube.com" class="shortcut">YouTube</a>
+    <a href="https://github.com" class="shortcut">GitHub</a>
+    <a href="https://reddit.com" class="shortcut">Reddit</a>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+
+    // Search on Enter key
+    searchInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        const query = searchInput.value.trim();
+        if (query) {
+          // Redirect to DuckDuckGo
+          window.location.href = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
