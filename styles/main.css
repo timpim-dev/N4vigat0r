@@ -57,6 +57,13 @@ a:hover {
     FORM ELEMENTS
     =========================== */
 
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
 input, textarea, select {
   outline: none;
   border: none;
