@@ -1,0 +1,12 @@
+{
+  "name": "N4vigat0r",
+  "version": "1.0.0",
+  "description": "Opensource web browser",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
